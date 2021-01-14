@@ -1,0 +1,37 @@
+How to connect to coursera in China
+
+https://zhuanlan.zhihu.com/p/144498122
+
+
+coursera 登录 访问 d3njjcbhbojbot.cloudfront.net
+
+coursera 看视频 访问 d3c33hcgiwev3.cloudfront.net
+
+step 1, 建立正确dns,打开网页
+
+1) 运行 cmd
+
+2) ping wwww.coursera.org (应该会超时）
+
+3）ping d3njjcbhbojbot.cloudfront.net (查看正确的ip， example 99.84.130.85）
+
+4) 添加到host 文件 下列语句 （windows/system32/drivers/etc/host）
+
+99.84.130.85 www.coursera.org
+
+
+
+Step 2: 查找可以打开视频的ip
+
+打开下面这个网页
+http://ping.chinaz.com/d3c33hcgiwev3.cloudfront.net
+
+
+寻找 <1ms的ip地址，添加到host里，例如
+
+13.33.214.184 d3c33hcgiwev3.cloudfront.net #japan amazon
+
+可以添加多个， 用#注释掉。
+
+
+
